@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backy Shop - Zapatos y Bolsos de Dama</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #e91e63;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Backy Shop</h1>
+    <p><em>"Donde el estilo y la elegancia caminan contigo"</em></p>
+  </header>
+
+  <!-- Descripción -->
+  <section>
+    <h2>Nuestros Productos</h2>
+    <p>
+      En <strong>Backy Shop</strong> ofrecemos una selección exclusiva de zapatos y bolsos de dama,
+      diseñados para mujeres modernas que buscan comodidad, estilo y versatilidad en cada ocasión.
+    </p>
+
+    <h3>👠 Zapatos</h3>
+    <ul>
+      <li>Sandalias elegantes para eventos y ocasiones especiales</li>
+      <li>Zapatos casuales perfectos para el día a día</li>
+      <li>Tacones que combinan comodidad y sofisticación</li>
+      <li>Zapatillas modernas para un look juvenil</li>
+    </ul>
+
+    <h3>👜 Bolsos</h3>
+    <ul>
+      <li>Bolsos de mano ideales para eventos formales</li>
+      <li>Mochilas urbanas con estilo y funcionalidad</li>
+      <li>Carteras versátiles para uso diario</li>
+      <li>Bolsos de fiesta con acabados exclusivos</li>
+    </ul>
+  </section>
+
+  <!-- Resumen de la empresa -->
+  <section>
+    <h2>Sobre Nosotros</h2>
+    <p>
+      <strong>Backy Shop</strong> es una empresa dedicada a la moda femenina, especializada en
+      ofrecer bolsos y zapatos que combinan tendencias actuales con materiales de alta calidad.
+      Nuestra misión es acompañar a cada mujer en su estilo de vida, brindando productos que
+      destaquen su personalidad, confianza y elegancia.
+    </p>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 Backy Shop - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Chatbot Landbot -->
+  <script>
+    window.addEventListener('mouseover', initLandbot, { once: true });
+    window.addEventListener('touchstart', initLandbot, { once: true });
+    var myLandbot;
+    function initLandbot() {
+      if (!myLandbot) {
+        var s = document.createElement('script');
+        s.type = "module"
+        s.async = true;
+        s.addEventListener('load', function() {
+          var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3104186-83DXAED4CEWIHNLF/index.json',
+          });
+        });
+        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+    }
+  </script>
+
+</body>
+</html>
